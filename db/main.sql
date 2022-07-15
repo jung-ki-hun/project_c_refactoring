@@ -6,11 +6,13 @@ user_no serial not null,
 user_id varchar(20) not null,
 user_pw varchar(100) not null,
 user_name varchar(20) not null,
+user_level varchar(20) DEFAULT 0,
 state integer not null DEFAULT 1,
 reg_dt timestamp not null DEFAULT now(),
 CONSTRAINT users_pkey PRIMARY KEY (user_no)
 );
 COMMENT ON COLUMN public.users.state IS '0 탈퇴 1 정상 2 계정잠금';
+COMMENT ON COLUMN public.users.user_level IS '1 일반인 2 중간관리자 2 최고관리자';
 
 -- 기계정보
 create table machine(
