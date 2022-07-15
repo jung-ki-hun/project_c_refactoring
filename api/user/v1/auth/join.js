@@ -1,6 +1,6 @@
 // const app = express.Router();
-const jkh = require("../../../../../lib/jkh_function")
-const { Q, pool } = require('../../../../../db/pg');
+const jkh = require("../../../lib/jkh_function")
+const { Q, pool } = require('../../../../db/pg');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const join = async (req, res) => {

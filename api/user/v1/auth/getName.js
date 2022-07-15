@@ -1,6 +1,6 @@
 // const app = express.Router();
-const jkh = require('../../../../../lib/jkh_function');
-const { Q, pool } = require('../../../../../db/pg');
+const jkh = require('../../../lib/jkh_function');
+const { Q, pool } = require('../../../../db/pg');
 
 
 const getName = async (req, res) => {
@@ -16,16 +16,7 @@ const getName = async (req, res) => {
         ...req.user,
     }
     try {
-        // let data = {
-        //     id: params.id,
-        //     pw: params.pw,
-        //     name: params.name
-        // }
-        // if (jkh.isEmpty(data.id,data.pw,data.name)) {
-        //     response.state = 2;
-        //     response.msg = 'params is empty !!';
-        //     return res.state(404).json(response);
-        // }
+
         const sql0 = Q`
         SELECT uses_name FROM users WHERE user_no = ${params.user_no};`;
         const query0 = await pool.query(sql0);

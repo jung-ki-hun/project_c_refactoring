@@ -1,5 +1,5 @@
-const { Q, pool } = require(`../../../../db/pg`);
-const config = require(`../../../../lib/config`);
+const { Q, pool } = require(`../../../db/pg`);
+const config = require(`../../lib/config`);
 
 const passport = require('passport');
 const passportJWT = require('passport-jwt');

@@ -59,7 +59,7 @@ var date_local_time_set = (local) => {
     const str = `${date.toLocaleTimeString(local)}`;
     return str;
 }
-
+const getDate = new Date();
 /********************************
  * ***********로그 관리***********
 *********************************/
@@ -119,22 +119,12 @@ module.exports = {
     isNan,
     date_time,
     date_ymd,
-    // cipher,
-    // dcipher,
-    // cipheriv,
-    // dcipheriv,
-    // webhook,
-    createToken,
-    pageid,
-    // ip_denying,
     file_r,
     file_w,
     file_a,
-    //error_log_stack,
     date_local_time,
     date_local_time_set,
-    appRoot,
+    getDate,
     logstream,
-    // upload
 
 }//log save
