@@ -1,3 +1,3 @@
 :START
-node server_main.js
+pm2 start ./apiServer.config.js
 @GOTO START
