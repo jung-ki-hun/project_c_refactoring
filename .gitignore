@@ -25,3 +25,10 @@ pnpm-debug.log*
 #etc
 /etc
 ./etc
+
+#log
+/log
+./log
+*.log
+
+/node_modules
