@@ -1,8 +1,8 @@
 // const app = express.Router();
 const jkh = require('../../../lib/jkh_function');
 const { Q, pool } = require('../../../../db/pg');
-const schedule = require('node-schedule')
-
+const schedule = require('node-schedule');
+const axios =require('axios');
 //임시로 여기에 저장
 const temp = `lWzqmJDInly7GXNU8xW%2BrcHIL0TMsN6uGV1TVFYUu2HnuXlRDTju6gPyG3YoYgFhf7UVdIrySTsVvpqxP1pABg%3D%3D`
 
